@@ -127,28 +127,6 @@ contactForm.addEventListener('submit', async (e) => {
     // Show loading message
     formStatus.innerHTML = '<div class="alert alert-info">Enviando mensaje...</div>';
     
-    // Simulate form submission (replace with actual API call)
-    // Example with Formspree:
-    /*
-    try {
-        const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        });
-        
-        if (response.ok) {
-            formStatus.innerHTML = '<div class="alert alert-success-custom">¡Mensaje enviado con éxito! Te responderé pronto.</div>';
-            contactForm.reset();
-        } else {
-            formStatus.innerHTML = '<div class="alert alert-danger">Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.</div>';
-        }
-    } catch (error) {
-        formStatus.innerHTML = '<div class="alert alert-danger">Error de conexión. Por favor, intenta más tarde.</div>';
-    }
-    */
     
     // Simulación para demo
     setTimeout(() => {
