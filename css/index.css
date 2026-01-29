@@ -1,8 +1,9 @@
 /* Custom Variables */
 :root {
-    --primary-color: #9B7BFF;     /* morado principal */
+    --primary-color: #8861ff;     /* morado principal */
     --secondary-color: #C6B4FF;   /* morado pastel suave */
     --dark-color: #2c2c3a;        /* gris oscuro más neutro */
+    --dark-purple: #2b1e4b; 
     --light-color: #f5f3ff;       /* fondo clarito con toque violeta */
     --transition: all 0.3s ease;
 }
@@ -433,4 +434,33 @@ body.dark-theme .alert-success-custom {
 
 .text-primary {
     color: var(--primary-color) !important;
+}
+
+.progress-bar.bg-primary {
+     background: linear-gradient(90deg, #9B7BFF, #C6B4FF);
+}
+
+.badge.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-color: var(--primary-color) !important;
+}
+
+footer {
+    background: linear-gradient(135deg, #5e29b9, #8861ff);
+    color: white;
 }
