@@ -1,11 +1,12 @@
 /* Custom Variables */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --dark-color: #2c3e50;
-    --light-color: #ecf0f1;
+    --primary-color: #9B7BFF;     /* morado principal */
+    --secondary-color: #C6B4FF;   /* morado pastel suave */
+    --dark-color: #2c2c3a;        /* gris oscuro más neutro */
+    --light-color: #f5f3ff;       /* fondo clarito con toque violeta */
     --transition: all 0.3s ease;
 }
+
 
 
 * {
@@ -98,7 +99,7 @@ body.dark-theme .text-muted {
     font-size: 3rem;
     font-weight: bold;
     color: white;
-    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 10px 30px rgba(155, 123, 255, 0.25);
     animation: float 3s ease-in-out infinite;
 }
 
@@ -113,8 +114,9 @@ body.dark-theme .text-muted {
 
 /* Hero Section */
 .hero {
-    padding-top: 100px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding-top: 120px;   /* espacio por navbar */
+    padding-bottom: 120px;
+    background: linear-gradient(135deg, #f3ecff 0%, #e0d4ff 100%);
 }
 
 body.dark-theme .hero {
@@ -147,6 +149,8 @@ body.dark-theme .hero {
 /* Stat Cards */
 .stat-card {
     transition: var(--transition);
+    margin-top: -30px; /* hace que suban un poco las tarjetas */
+    padding-bottom: 60px;
 }
 
 .stat-card:hover {
@@ -168,10 +172,10 @@ body.dark-theme .hero {
 }
 
 .btn-primary:hover {
-    background-color: #2980b9;
-    border-color: #2980b9;
+    background-color: #5e29b9;
+    border-color: #7129b9;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    box-shadow: 0 10px 30px rgba(155, 123, 255, 0.25);
 }
 
 .btn-secondary {
@@ -299,7 +303,7 @@ body.dark-theme .map-placeholder {
 /* Form Styles */
 .form-control:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+    box-shadow: 0 10px 30px rgba(155, 123, 255, 0.25);
 }
 
 body.dark-theme .form-control {
@@ -359,7 +363,7 @@ body.dark-theme .form-control:focus {
 
 .scroll-to-top:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(52, 152, 219, 0.5);
+    box-shadow: 0 10px 30px rgba(155, 123, 255, 0.25);
 }
 
 .scroll-to-top.show {
@@ -425,4 +429,8 @@ body.dark-theme .alert-success-custom {
     background-color: rgba(46, 204, 113, 0.2);
     border-color: rgba(46, 204, 113, 0.4);
     color: #2ecc71;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
 }
